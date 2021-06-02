@@ -1,0 +1,380 @@
+.header{
+    background: #fff;
+}
+.main_active{
+    padding-top: 140px;
+}
+.sec{
+    margin-top: 100px;
+    overflow: hidden;
+}
+.lg_img_box{
+    width: 50%;
+    float: left;
+    border: 1px solid #ddd;
+    overflow: hidden;
+
+    position: relative;
+}
+.lg_img_box img{
+    width: 100%;
+}
+.magnifier{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px #ddd;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: scale(1.6);
+    display: none;
+}
+.detail_box{
+    width: 40%;
+    float: right;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #333 ;
+    background: #fff;
+    position: static;
+}
+.detail_box_active{
+    width: 30%;
+    border:1px solid #ddd; 
+    
+    position:absolute;
+    right:0;
+    
+    display:none;
+    z-index: 9;
+}
+.item_info{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.i_name{
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #555555;
+}
+.i_tag{
+    color: #999999;
+    padding: 20px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+.i_price{
+    font-size: 17px;
+    padding-top: 30px ;
+}
+.option_box{
+    font-size: 14px;
+    margin: 30px 0;
+}
+.opt_box{
+    margin: 20px 0;
+}
+.opt_title{
+    padding-bottom:10px;
+}
+.opt_item{
+    width: 100%;
+    height: 30px;
+    
+    border: 1px solid #e8e8e8;
+    outline: none;
+}
+.roast_btn{
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    color: #ddd;
+    font-weight: 900;
+    padding: 6px;
+    margin-right: 10px;
+}
+.roast_btn_active{
+    color: orange;
+}
+.opt_txt{
+    padding-top:10px ;
+    font-size: 13px;
+    color: slategrey;
+}
+.selected_item_box{
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgb(243, 243, 243);
+}
+.selected_box{
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.selected_item{
+    width: 50%;
+    float: left;
+}
+.item_name{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.selected_opt{
+    font-size: 11px;
+    color: rgb(98, 98, 98);
+}
+.item_qty{
+    width: 30%;
+    float: left;
+}
+.item_qty input{
+    outline: none;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+.btn_val{
+    width: 30%;
+    height: 32px;
+    float: left;
+    background: #fff;
+}
+.btn_qty_box{
+    float: left;
+
+}
+.btn_qty{
+    width: 25px;
+    height: 16px;
+    display: flex;
+    border: 1px solid #ddd;
+    background: url(../img/1st/down.png) no-repeat center;
+    box-sizing: border-box;
+}
+.btn_qty:nth-child(1){
+    background: url(../img/1st/up.png) no-repeat center;
+}
+.btn_close{
+    width: 15px;
+    height: 15px;
+    float: left;
+    background: url(../img/1st/close.png) no-repeat center;
+    border: 1px solid #ddd;
+    padding: 3px;
+    margin: 4px 0 3px 10px;
+}
+
+.hidden_input{
+    display: none;
+}
+.item_price{
+    width: 15%;
+    float: right;
+    margin: 9px 0;
+}
+.total_price{
+    padding: 10px 0;
+    text-align: right;
+    font-size: 25px;
+}
+.total_price span{
+    font-size: 14px;
+}
+.total_price p{
+    display: inline-block;
+}
+.btn_box{
+    font-size: 0;
+}
+.item_btn{
+    width: calc((100% - (5px * 2)) / 3);
+    height: 50px;
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    background: #fff;
+    outline: none;
+    border: 1px solid #ddd;
+    font-weight: 900;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.item_btn:last-child{
+    margin-right: 0;
+}
+.item_btn:nth-child(1){
+    background: #000;
+    color: #fff;
+}
+/*  sec2  시작   */
+#sec2{
+    border-top: 1px solid #ddd;
+}
+.sub_nav{
+    margin: 100px 0 ;
+    text-align: center;
+}
+.sub_nav li{
+    font-weight: 100;
+    padding: 0 20px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.sub_nav_weight{
+    font-weight: 400 !important;
+}
+.sub_nav li::after{
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #ddd;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sub_nav li:last-child::after{
+    display: none;
+}
+.img_detail img,
+.infomation img{
+    width: 100%;
+}
+
+#sec4, 
+#sec5{
+    text-align: center;
+}
+.sec_title{
+    font-size: 25px;
+    margin: 50px 0;
+}
+.sec_pan{
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    background: rgb(236, 236, 236);
+    color: rgba(0,0,0,0.3);
+}
+.write_btn{
+    margin: 50px 0 ;
+}
+.write_btn > input{
+    width: 200px;
+    height: 50px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-weight: 900;
+    
+}
+.write_btn > input:nth-child(1){
+    background: #000;
+    color: #fff;
+}
+.write_btn > input:nth-child(2){
+    background: #fff;
+    color: #000;
+}
+.sec1_tab{
+    padding: 10px 5px;
+    border-radius: 10px 0 0 10px;
+    writing-mode: vertical-lr;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    /* top: 20%; */
+    z-index: 999;
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .lg_img_box {
+        width: 45%;
+    }
+    .detail_box {
+        width: 50%;
+    }
+    .item_info {
+        margin-bottom: 20px;
+    }
+    .i_name {
+        font-size: 17px;
+        padding-bottom: 10px;
+        color: #555555;
+    }
+    .i_tag {
+        color: #999999;
+        padding: 10px 0;
+        border-bottom: 1px solid #e8e8e8;
+        font-size: 15px;
+    }
+    .i_price {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .detail_box {
+        padding: 0 10px;
+    }
+    .option_box {
+        font-size: 12px;
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width: 750px) {
+    .lg_img_box {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        float: none;
+    }
+    .detail_box {
+        width: 90%;
+        margin: 30px auto;
+        float: none;
+    }
+    .item_btn {
+        height: 40px;
+        font-size: 12px;
+    }
+    .total_price {
+        font-size: 18px;
+    }
+    .sub_nav li {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+    .item_btn {
+        padding: 0 5px;
+    }
+    .sec {
+        margin-top: 70px;
+    }
+    .sec_title {
+        font-size: 18px;
+        margin: 30px 0;
+    }
+    .sec_pan {
+        height: 100px;
+        line-height: 100px;
+        font-size: 14px;
+    }
+    .write_btn {
+        margin: 30px 0;
+    }
+    .write_btn > input {
+        width: 160px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 750px) {
+    
+}
